@@ -6,6 +6,8 @@ export const client = new Client({
   host: process.env.DB_HOST,
   database: process.env.DB_DATABASE,
   port: Number(process.env.DB_PORT),
+  connectionString: process.env.DB_CONNECTION,
+  ssl: true
 });
 
 const createMovieTable = async () => {

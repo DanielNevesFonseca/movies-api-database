@@ -1,14 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "target": "es6",
     "module": "commonjs",
-    "typeRoots": ["node_modules/@types"],
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "lib": ["es6"],
+    "allowJs": true,
+    "outDir": "app",
+    "rootDirs": ["src"],
     "strict": true,
-    "exactOptionalPropertyTypes": true,
-    "skipLibCheck": true
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
   },
+
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
